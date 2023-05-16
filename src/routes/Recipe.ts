@@ -54,7 +54,11 @@ export class Recipe {
 		new Recipe("Steel Pipe", [new ItemAmount(Item.STEEL_INGOT_ITEM, 30)], [new ItemAmount(Item.STEEL_PIPE_ITEM, 20)]),
 		new Recipe("Supercomputer", [new ItemAmount(Item.COMPUTER_ITEM, 3.75), new ItemAmount(Item.AI_LIMITER_ITEM, 3.75), new ItemAmount(Item.HIGH_SPEED_CONNECTOR_ITEM, 5.625), new ItemAmount(Item.PLASTIC_ITEM, 52.5)], [new ItemAmount(Item.SUPERCOMPUTER_ITEM, 1.875)]),
 		new Recipe("Wire", [new ItemAmount(Item.COPPER_INGOT_ITEM, 15)], [new ItemAmount(Item.WIRE_ITEM, 30)]),
-	]
+	];
+
+	static findByName(name: string): Recipe | undefined {
+		return Recipe.RECIPES.find(r => r.name == name);
+	}
 
 	readonly name: string;
 	readonly input: ItemAmount[];
