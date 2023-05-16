@@ -6,6 +6,8 @@
     export let index: number;
     export let production: Production;
 
+	$: selectedRecipe = Recipe.findByName(production.recipeName);
+
 	const dispatch = createEventDispatcher();
 
 	function remove() {
@@ -16,9 +18,9 @@
 <div class="row {production.satisfied ? '' : 'unsatisfied'}">
 	<div class="col">Producer {index}<button class="btn btn-light" on:click={remove}>-</button></div>
 	<div class="col">
-		<select bind:value={production.recipe} on:change class="form-select">
+		<select bind:value={production.recipeName} on:change class="form-select">
 			{#each Recipe.RECIPES as recipe}
-				<option value={recipe}>
+				<option value={recipe.name}>
 					{recipe.name}
 				</option>
 			{/each}
@@ -28,14 +30,14 @@
 	</div>
 	<div class="col">
 		<ul>
-			{#each production.recipe.input as itemAmount}
+			{#each selectedRecipe.input as itemAmount}
 				<li>{itemAmount.item.name} ({itemAmount.amount})</li>
 			{/each}
 		</ul>
 	</div>
 	<div class="col">
 		<ul>
-			{#each production.recipe.output as itemAmount}
+			{#each selectedRecipe.output as itemAmount}
 				<li>{itemAmount.item.name} ({itemAmount.amount})</li>
 			{/each}
 		</ul>
