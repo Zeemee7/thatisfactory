@@ -1,6 +1,8 @@
 export class Item {
 
+	static ADAPTIVE_CONTROL_UNIT_ITEM = new Item("Adaptive Control Unit");
 	static AI_LIMITER_ITEM = new Item("AI Limiter");
+	static AUTOMATED_WIRING_ITEM = new Item("Automated Wiring");
 
 	static BIOMASS_ITEM = new Item("Biomass");
 
@@ -30,6 +32,7 @@ export class Item {
 
 	static LIMESTONE_ITEM = new Item("Limestone");
 
+	static MODULAR_ENGINE_ITEM = new Item("Modular Engine");
 	static MODULAR_FRAME_ITEM = new Item("Modular Frame");
 	static MOTOR_ITEM = new Item("Motor");
 
@@ -45,6 +48,7 @@ export class Item {
 
 	static SCREW_ITEM = new Item("Screw");
 	static SILICA_ITEM = new Item("Silica");
+	static SMART_PLATING_ITEM = new Item("Smart Plating");
 	static STATOR_ITEM = new Item("Stator");
 	static STEEL_BEAM_ITEM = new Item("Steel Beam");
 	static STEEL_INGOT_ITEM = new Item("Steel Ingot");
