@@ -51,6 +51,8 @@ export class Item {
 	static STEEL_PIPE_ITEM = new Item("Steel Pipe");
 	static SUPERCOMPUTER_ITEM = new Item("Supercomputer");
 
+	static VERSATILE_FRAMEWORK = new Item("Versatile Framework");
+
 	static WIRE_ITEM = new Item("Wire");
 
 	static ITEMS: Item[] = [

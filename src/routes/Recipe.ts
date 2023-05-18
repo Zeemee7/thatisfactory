@@ -90,6 +90,7 @@ export class Recipe {
 		new Recipe("Steel Ingot", [new ItemAmount(Item.IRON_ORE_ITEM, 45), new ItemAmount(Item.COAL_ITEM, 45)], [new ItemAmount(Item.STEEL_INGOT_ITEM, 45)]),
 		new Recipe("Steel Pipe", [new ItemAmount(Item.STEEL_INGOT_ITEM, 30)], [new ItemAmount(Item.STEEL_PIPE_ITEM, 20)]),
 		new Recipe("Supercomputer", [new ItemAmount(Item.COMPUTER_ITEM, 3.75), new ItemAmount(Item.AI_LIMITER_ITEM, 3.75), new ItemAmount(Item.HIGH_SPEED_CONNECTOR_ITEM, 5.625), new ItemAmount(Item.PLASTIC_ITEM, 52.5)], [new ItemAmount(Item.SUPERCOMPUTER_ITEM, 1.875)]),
+		new Recipe("Versatile Framework", [new ItemAmount(Item.MODULAR_FRAME_ITEM, 2.5), new ItemAmount(Item.STEEL_BEAM_ITEM, 30)], [new ItemAmount(Item.VERSATILE_FRAMEWORK, 5)]),
 		new Recipe("Wire", [new ItemAmount(Item.COPPER_INGOT_ITEM, 15)], [new ItemAmount(Item.WIRE_ITEM, 30)]),
 	];
 
