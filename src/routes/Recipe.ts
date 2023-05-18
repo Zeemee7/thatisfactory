@@ -6,7 +6,10 @@ export class Recipe {
 
 	static RECIPES: Recipe[] = [
 		Recipe.NO_RECIPE,
+		new Recipe("Adaptive Control Unit", [new ItemAmount(Item.AUTOMATED_WIRING_ITEM, 7.5), new ItemAmount(Item.CIRCUIT_BOARD_ITEM, 5), new ItemAmount(Item.HEAVY_MODULAR_FRAME_ITEM, 1), new ItemAmount(Item.COMPUTER_ITEM, 1)], [new ItemAmount(Item.ADAPTIVE_CONTROL_UNIT_ITEM, 1)]),
 		new Recipe("AI Limiter", [new ItemAmount(Item.COPPER_SHEET_ITEM, 25), new ItemAmount(Item.QUICKWIRE_ITEM, 100)], [new ItemAmount(Item.AI_LIMITER_ITEM, 5)]),
+		new Recipe("Automated Wiring", [new ItemAmount(Item.STATOR_ITEM, 2.5), new ItemAmount(Item.CABLE_ITEM, 50)], [new ItemAmount(Item.AUTOMATED_WIRING_ITEM, 2.5)]),
+		new Recipe("Automated Wiring Alternate: Automated Speed Wiring", [new ItemAmount(Item.STATOR_ITEM, 3.75), new ItemAmount(Item.WIRE_ITEM, 75), new ItemAmount(Item.HIGH_SPEED_CONNECTOR_ITEM, 1.875)], [new ItemAmount(Item.AUTOMATED_WIRING_ITEM, 7.5)]),
 		new Recipe("Biomass", [], []),
 		new Recipe("Cable", [new ItemAmount(Item.WIRE_ITEM, 60)], [new ItemAmount(Item.CABLE_ITEM, 30)]),
 		new Recipe("Caterium Ingot", [new ItemAmount(Item.CATERIUM_ORE_ITEM, 45)], [new ItemAmount(Item.CATERIUM_INGOT_ITEM, 15)]),
@@ -70,6 +73,7 @@ export class Recipe {
 		new Recipe("Limestone Pure MK1", [], [new ItemAmount(Item.LIMESTONE_ITEM, 120)]),
 		new Recipe("Limestone Pure MK2", [], [new ItemAmount(Item.LIMESTONE_ITEM, 240)]),
 		new Recipe("Limestone Pure MK3", [], [new ItemAmount(Item.LIMESTONE_ITEM, 480)]),
+		new Recipe("Modular Engine", [new ItemAmount(Item.MOTOR_ITEM, 2), new ItemAmount(Item.RUBBER_ITEM, 15), new ItemAmount(Item.SMART_PLATING_ITEM, 2)], [new ItemAmount(Item.MODULAR_ENGINE_ITEM, 1)]),
 		new Recipe("Modular Frame", [new ItemAmount(Item.REINFORCED_IRON_PLATE_ITEM, 3), new ItemAmount(Item.IRON_ROD_ITEM, 12)], [new ItemAmount(Item.MODULAR_FRAME_ITEM, 2)]),
 		new Recipe("Motor", [new ItemAmount(Item.ROTOR_ITEM, 10), new ItemAmount(Item.STATOR_ITEM, 10)], [new ItemAmount(Item.MOTOR_ITEM, 5)]),
 		//new Recipe("Plastic", [new ItemAmount(Item.CRUDE_OIL_ITEM, 30)], [new ItemAmount(Item.PLASTIC_ITEM, 20), new ItemAmount(Item.HEAVY_OIL_RESIDUE, 10)]),
@@ -85,6 +89,7 @@ export class Recipe {
 		new Recipe("Screw", [new ItemAmount(Item.IRON_ROD_ITEM, 10)], [new ItemAmount(Item.SCREW_ITEM, 40)]),
 		new Recipe("Screw Alternate: Cast Screw", [new ItemAmount(Item.IRON_INGOT_ITEM, 12.5)], [new ItemAmount(Item.SCREW_ITEM, 50)]),
 		new Recipe("Silica", [new ItemAmount(Item.RAW_QUARTZ_ITEM, 22.5)], [new ItemAmount(Item.SILICA_ITEM, 37.5)]),
+		new Recipe("Smart Plating", [new ItemAmount(Item.REINFORCED_IRON_PLATE_ITEM, 2), new ItemAmount(Item.ROTOR_ITEM, 2)], [new ItemAmount(Item.SMART_PLATING_ITEM, 2)]),
 		new Recipe("Stator", [new ItemAmount(Item.STEEL_PIPE_ITEM, 15), new ItemAmount(Item.WIRE_ITEM, 40)], [new ItemAmount(Item.STATOR_ITEM, 5)]),
 		new Recipe("Steel Beam", [new ItemAmount(Item.STEEL_INGOT_ITEM, 60)], [new ItemAmount(Item.STEEL_BEAM_ITEM, 15)]),
 		new Recipe("Steel Ingot", [new ItemAmount(Item.IRON_ORE_ITEM, 45), new ItemAmount(Item.COAL_ITEM, 45)], [new ItemAmount(Item.STEEL_INGOT_ITEM, 45)]),
