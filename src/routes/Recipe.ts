@@ -81,7 +81,7 @@ export class Recipe {
 		new Recipe("Quartz Crystal", [new ItemAmount(Item.RAW_QUARTZ_ITEM, 37.5)], [new ItemAmount(Item.QUARTZ_CRYSTAL_ITEM, 22.5)]),
 		new Recipe("Quickwire", [new ItemAmount(Item.CATERIUM_INGOT_ITEM, 12)], [new ItemAmount(Item.QUICKWIRE_ITEM, 60)]),
 		new Recipe("Reinforced Iron Plate", [new ItemAmount(Item.IRON_PLATE_ITEM, 30), new ItemAmount(Item.SCREW_ITEM, 60)], [new ItemAmount(Item.REINFORCED_IRON_PLATE_ITEM, 5)]),
-		new Recipe("Rotor", [new ItemAmount(Item.ROTOR_ITEM, 20), new ItemAmount(Item.SCREW_ITEM, 100)], [new ItemAmount(Item.ROTOR_ITEM, 4)]),
+		new Recipe("Rotor", [new ItemAmount(Item.IRON_ROD_ITEM, 20), new ItemAmount(Item.SCREW_ITEM, 100)], [new ItemAmount(Item.ROTOR_ITEM, 4)]),
 		new Recipe("Rotor Alternate: Copper Rotor", [new ItemAmount(Item.COPPER_SHEET_ITEM, 22.5), new ItemAmount(Item.SCREW_ITEM, 195)], [new ItemAmount(Item.ROTOR_ITEM, 11.25)]),
 		new Recipe("Rotor Alternate: Steel Rotor", [new ItemAmount(Item.STEEL_PIPE_ITEM, 10), new ItemAmount(Item.WIRE_ITEM, 30)], [new ItemAmount(Item.ROTOR_ITEM, 5)]),
 		//new Recipe("Rubber", [new ItemAmount(Item.CRUDE_OIL_ITEM, 30)], [new ItemAmount(Item.RUBBER_ITEM, 20), new ItemAmount(Item.HEAVY_OIL_RESIDUE, 20)]),
